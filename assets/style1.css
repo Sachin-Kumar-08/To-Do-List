@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+        body {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('bg1.jpg') no-repeat center center fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+        a.signout {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;  
+            text-decoration: none;
+            color: #333; 
+            background-color: #fff; 
+            text-align: center;
+        }
+        
+        a.signout:hover {
+            background-color: #555;
+        }
+        .title {
+            font-family: "Sigmar", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: rgba(255, 255, 255, 0.734);
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        .container {
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(8.5px);
+            border-radius: 10px;
+            width: 400px;
+        }
+        .input-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #cccccc5e;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            border: 0;
+            transition: all 0.3s;
+        }
+        button:hover {
+            background-color: hsl(261deg 80% 48%);
+            color: white;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(8.5px);
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        li.completed {
+            text-decoration: line-through;
+            color: gray;
+        }
+        .edit, .delete {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .edit { color: blue; }
+        .delete { color: red; }
